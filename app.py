@@ -5,9 +5,7 @@ import pandas as pd
 app=Flask(__name__)
 api=Api(app)
 
-df=pd.read_csv("s3://talentprofile/arun_ml_work/salary_testing/modified_data.csv",
-          storage_options={'key':'AKIASXCE4245H5IMJIOM',
-                'secret':'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'})
+df=pd.read_csv("s3://talentprofile/arun_ml_work/salary_testing/modified_data.csv")
 
 
 class InternalSalaryAPI(Resource):
